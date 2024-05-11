@@ -2,7 +2,12 @@
 {% block content %}
 <div class="info_box">
     <div class="info-title">
+        {% if player_player %}
+        <span>Welcome {{ player_name}}</span>
+        {% else %}
+
         <span>Let's play django quiz</span>
+        {% endif %}
     </div>
     <div class="info-list">
         <form action="#" method="POST">
